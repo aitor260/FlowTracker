@@ -74,8 +74,8 @@ Ejemplo de un 'DataFrame` para el libro diario de un ejercicio:
 +----+------+------------+-----------------+---------------+---------------+---------+----------------+-------------------------------------------+
 ```
 
-> [!NOTE] ***TBD***
-> *Opcionalmente, la aplicación permitirá exportar este documento como fichero del tipo «valores separados por comas».*
+> [!NOTE]
+> ***TBD*** *Opcionalmente, la aplicación permitirá exportar este documento como fichero del tipo «valores separados por comas».*
 
 ## 5. Libro mayor
 
