@@ -15,11 +15,11 @@ Por defecto, el tipo de documento será de **«valores separados por comas»** (
 
 Ejemplo del contenido de un fichero «.csv» que almacena los movimientos extraidos del banco:
 ```
-fecha,concepto,importe,disponible
-21/10/25,Paypal,-40,99,2449,96
-17/10/25,Traspaso,-203,5,2490,95
-17/10/25,BONIFICACION COMISIONES,3,5,2694,45
-15/10/25,FAB.NACION. DE MONEDA Y T,-3,62,2690,95
+fecha;concepto;importe;disponible
+21/10/25;Paypal;-40,99;2449,96
+17/10/25;Traspaso;-203,5;2490,95
+17/10/25;BONIFICACION COMISIONES;3,5;2694,45
+15/10/25;FAB.NACION. DE MONEDA Y T;-3,62;2690,95
 ```
 
 Este listado se importará a la aplicación usando el módulo `csv` de Python que itera sobre cada línea del documento de entrada, pedirá al usuario que confirme e introduzca los datos adicionales para crear asientos contables mediante una clase `asientoContable`.
