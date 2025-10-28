@@ -192,7 +192,8 @@ El flujo de trabajo en **FlowTracker** sigue las siguientes etapas:
 > Se asume que el usuario ha definido previamente todas las cuentas que considere oportunas para utilizar la aplicación con un ejercicio personal.
 
 ### 1.	Listado de movimientos
-Se importa el documento `.csv` exportado desde el banco y se procesa línea por línea. Para cada línea se muestra los datos al usuario y se espera a que este introduzca las cuentas DEBE y HABER y una descripción. Cada registro origina puede originar uno o varios asientos contables (en caso de ser más de uno, todos ellos están asociados entre sí con un mismo `id`).
+1. Se importa el documento `.txt` que contiene las cuentas definidas previamente por el usuario.
+2. Se importa el documento `.csv` exportado desde el banco y se procesa línea por línea. Para cada línea se muestra los datos al usuario y se espera a que este introduzca las cuentas DEBE y HABER y una descripción. Cada registro puede originar uno o varios asientos contables (en caso de ser más de uno, todos ellos están asociados entre sí con un mismo `id`) y se guardan en forma de objeto de la clase `AsientoContable`.
 
 ### 2.	Libro diario
 El conjunto de asientos en forma de objetos `AsientoContable` se guarda en una lista y, adicionalmente/opcionalmente, en un fichero «CSV» intermedio.
@@ -204,5 +205,4 @@ Se crea un diccionario donde la clave sea un `str` correspondiente a cada uno de
 2. Sumar acumulativamente el importe a la cuenta correspondiente (DEBE o HABER).
 3. Calcular el saldo total restante para esa cuenta mediante la diferencia.
 
-Se generan los totales de debe y haber por cuenta, calculando el saldo final de cada una.
-Se exporta a JSON para su fácil lectura y posterior análisis.
+Se exporta (opcionalmente) a JSON para su fácil lectura y posterior análisis.
