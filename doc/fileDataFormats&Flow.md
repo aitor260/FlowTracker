@@ -108,7 +108,7 @@ Ejemplo de un Libro Diario exportado como fichero CSV:
 ```
 id,fecha,concepto,debe,importeDebe,haber,importeHaber,descripcion
 1,2025-10-05,PAGO ALQUILER,Alquiler,800.00,Banco c/c,400.00,Mitad del alquiler pagada por transferencia
-1,2025-10-05,PAGO ALQUILER,,0.00,Efectivo,400.00,Mitad del alquiler pagada en efectivo
+1,2025-10-05,PAGO ALQUILER,,Efectivo,400.00,Mitad del alquiler pagada en efectivo
 2,2025-10-08,REPSOL,Gasolina,65.50,Banco c/c,65.50,Recarga de gasolina del coche
 3,2025-10-12,3,NOMINA MES,Banco c/c, 1800.00,Nomina,1800.00,Ingreso de la nómina del mes de octubre
 4,2025-10-15,FANGALOKA,Bar/Cafeteria,45.20,Banco c/c,45.20,Cafe con Juan en Fangaloka
@@ -196,7 +196,7 @@ El flujo de trabajo en **FlowTracker** sigue las siguientes etapas:
 2. Se importa el documento `.csv` exportado desde el banco y se procesa línea por línea. Para cada línea se muestra los datos al usuario y se espera a que este introduzca las cuentas DEBE y HABER y una descripción. Cada registro puede originar uno o varios asientos contables (en caso de ser más de uno, todos ellos están asociados entre sí con un mismo `id`) y se guardan en forma de objeto de la clase `AsientoContable`.
 
 ### 2.	Libro diario
-El conjunto de asientos en forma de objetos `AsientoContable` se guarda en una lista y, adicionalmente/opcionalmente, en un fichero «CSV» intermedio.
+El conjunto de asientos en forma de objetos `AsientoContable` se guarda en una lista y, adicionalmente, en un fichero «CSV» intermedio.
 
 ### 3.	Libro mayor
 Se crea un diccionario donde la clave sea un `str` correspondiente a cada uno de los elementos de la lista de cuentas contables y el valor sea un diccionario para los campos `asientos`, `debe_total`, `haber_total` y `saldo`. Se itera sobre el libro diario (lista de asientos contables) y se realizan las siguientes acciones:
@@ -205,4 +205,4 @@ Se crea un diccionario donde la clave sea un `str` correspondiente a cada uno de
 2. Sumar acumulativamente el importe a la cuenta correspondiente (DEBE o HABER).
 3. Calcular el saldo total restante para esa cuenta mediante la diferencia.
 
-Se exporta (opcionalmente) a JSON para su fácil lectura y posterior análisis.
+Se exporta a JSON para su fácil lectura y posterior análisis.
