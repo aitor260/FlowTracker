@@ -68,7 +68,7 @@ cuentas: list[str]
 ```
 
 > [!IMPORTANT]
-> ***TBD** - Hay que elegir con un fichero `.txt` con los nombres de las cuentas es suficiente para trabajar o queremos optar por un «JSON» en su lugar para poder almacenar más metadatos por cada cuenta.*
+> ***TBD** - Hay que elegir si con un fichero `.txt` con los nombres de las cuentas es suficiente para trabajar o queremos optar por un «JSON» en su lugar para poder almacenar más metadatos por cada cuenta.*
 
 ## 3. Libro Diario
 
