@@ -37,7 +37,7 @@ Este fichero contiene los registros de cada operación en una cuenta bancaría. 
 
 #### Ejemplo
 
-```csv
+```
 fecha;concepto;importe;disponible
 21/10/25;Paypal;-40,99;2449,96
 17/10/25;Traspaso;-203,5;2490,95
@@ -77,7 +77,7 @@ cuentas: list[str]
 
 Ejemplo de una lista de Cuentas Contables exportada como JSON:
 
-```json
+```
 [
     {
         "id": 1,
@@ -148,7 +148,7 @@ Alternativamente la aplicación facilita la exportación del documento como fich
 - **Codificación recomendada:** UTF-8
 
 Ejemplo de un Libro Diario exportado como fichero CSV:
-```csv
+```
 id,fecha,concepto,debe,importeDebe,haber,importeHaber,descripcion
 1,2025-10-05,PAGO ALQUILER,Alquiler,800.00,Banco c/c,400.00,Mitad del alquiler pagada por transferencia
 1,2025-10-05,PAGO ALQUILER,,Efectivo,400.00,Mitad del alquiler pagada en efectivo
@@ -169,7 +169,7 @@ libroMayor: dict[str, dict[str, Any]]
 ```
 
 Donde cada clave es el nombre de una cuenta y el valor es un diccionario con la siguiente estructura:
-```json
+```
 {
     "asientos": list[int],          # IDs de los asientos asociados a esta cuenta
     "debe_total": float,            # Total acumulado en el debe
@@ -188,7 +188,7 @@ Al trabajar con diccionarios la idea de cara a exportar el Libro Mayor es trabaj
 - **Extensión**: `.json`
 
 Ejemplo de un Libro Mayor exportado como fichero JSON:
-```json
+```
 {
     "Banco c/c": {
         "asientos": [1, 3, 4],
