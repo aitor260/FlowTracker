@@ -5,9 +5,6 @@ class PersistenceManager:
     def __init__(self):
         self.file_path = "../.data/accounts.json"
 
-    """
-    CuentasContables managing functions
-    """
     def exists(self, account_id: str) -> bool:
         data = fs.read_json(self.file_path)
         return any(item['id'] == account_id for item in data)
