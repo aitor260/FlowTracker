@@ -207,6 +207,8 @@ marimo/_lsp/
 __marimo__/
 .DS_Store
 
-# Data
-.data/
+# Mac specific
+.DS_Store
 
+# Local Database / JSON, CSVs files
+data_files/

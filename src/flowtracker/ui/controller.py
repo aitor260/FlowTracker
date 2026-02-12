@@ -1,5 +1,5 @@
-from persistence.PersistenceManager import PersistenceManager
-from domain.CuentaContable import CuentaContable
+from flowtracker.data.manager import PersistenceManager
+from flowtracker.core import CuentaContable
 
 class Controller:
     def __init__(self):

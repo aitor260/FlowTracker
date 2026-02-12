@@ -1,0 +1,1 @@
+-e git+https://github.com/aitor260/flowTracker.git@85a065565cc7e189af15c646f2863d7001b8d0b2#egg=flowtracker

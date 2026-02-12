@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowtracker"
+version = "0.1.0"
+description = "Aplicación de contabilidad personal"
+dependencies = [
+    # Aquí irán tus librerías, por ejemplo:
+    # "pyside6", 
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+flowtracker = "flowtracker.__main__:main"
