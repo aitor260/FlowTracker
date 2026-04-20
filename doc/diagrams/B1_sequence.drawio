@@ -1,0 +1,126 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="WiC4RQxkAmemdpJi1vYx">
+    <mxGraphModel dx="1301" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-11" value="flowtracker plan create -n &quot;MiPlan&quot;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-2" target="vPAUgA_jucjPeU0_CcTD-4">
+          <mxGeometry x="0.0017" width="80" relative="1" as="geometry">
+            <mxPoint x="359.9973684210527" y="530" as="sourcePoint" />
+            <mxPoint x="650.05" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="170" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-18" value="&amp;lt;&amp;lt;service&amp;gt;&amp;gt;&lt;br&gt;:DataManager" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="900" y="70" width="100" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-24" value="request_plan_creation()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-4" target="vPAUgA_jucjPeU0_CcTD-6">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="354.8939393939395" y="179.9999999999999" as="sourcePoint" />
+            <mxPoint x="430" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-25" value="create_new_plan()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-6" target="vPAUgA_jucjPeU0_CcTD-15">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="500" y="230" as="sourcePoint" />
+            <mxPoint x="617" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-15" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="580" y="75" width="40" height="485" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-16" value=":PlanActions" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="555" y="50" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-6" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="430" y="80" width="40" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-7" value=":UI_Controller" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-4" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="50" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-5" value=":CLI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="50" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-2" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="15" y="90" width="20" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-3" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="60" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-10" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" vertex="1" parent="1">
+          <mxGeometry x="770" y="80" width="40" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-28" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vPAUgA_jucjPeU0_CcTD-10">
+          <mxGeometry x="15" y="170" width="10" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-17" value="nuevoPlan :PlanContable" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="50" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-29" value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt; PlanContable()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" edge="1" target="vPAUgA_jucjPeU0_CcTD-28" parent="1" source="vPAUgA_jucjPeU0_CcTD-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="255" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-31" value="save_plan()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-15" target="vPAUgA_jucjPeU0_CcTD-18">
+          <mxGeometry x="-0.4513" width="80" relative="1" as="geometry">
+            <mxPoint x="650" y="320" as="sourcePoint" />
+            <mxPoint x="900" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="300" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-32" value="is_saved" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-18" target="vPAUgA_jucjPeU0_CcTD-15">
+          <mxGeometry x="0.4513" relative="1" as="geometry">
+            <mxPoint x="530" y="440" as="sourcePoint" />
+            <mxPoint x="620" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="360" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-33" value="success_status" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-6" target="vPAUgA_jucjPeU0_CcTD-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="430" as="sourcePoint" />
+            <mxPoint x="480" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-39" value="newPlan" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-15" target="vPAUgA_jucjPeU0_CcTD-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="430" as="sourcePoint" />
+            <mxPoint x="490" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="530" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vPAUgA_jucjPeU0_CcTD-40" value="display_message(&quot;Plan created successfully&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="vPAUgA_jucjPeU0_CcTD-4" target="vPAUgA_jucjPeU0_CcTD-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="500" as="sourcePoint" />
+            <mxPoint x="100" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

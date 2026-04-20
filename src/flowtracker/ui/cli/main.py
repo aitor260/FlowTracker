@@ -1,3 +1,4 @@
+from flowtracker.ui.cli.view_cli import *
 from flowtracker.ui.controller import Controller
 import argparse
 
@@ -27,6 +28,16 @@ class CLI:
 
         acc_rm = acc_subparsers.add_parser("rm", help="Borrar una cuenta contable")
         acc_rm.add_argument("-n", "--name", required=True, type=str, help="Nombre de la cuenta")
+
+        parser_proj = subparsers.add_parser("ejer", help="Comandos relacionados con las gestión de ejercicios")
+        proj_subparsers = parser_proj.add_subparsers(dest="proj_action")
+
+        proj_create = proj_subparsers.add_parser("create", help="Crear un ejercicio")
+        proj_create.add_argument("-n", "--name", type=str, help="Nombre del ejercicio")
+        proj_create.add_argument("-s", "--start", type=str, help="Fecha de inicio del ejercicio")
+        proj_create.add_argument("-e", "--end", type=str, help="Fecha de fin del ejercicio")
+        proj_create.add_argument("-d", "--description", type=str, help="Descripción del ejercicio")
+        proj_create.add_argument("-v","--verbose", action="store_true", default=False, help="Muestra información adicional")
     
     def run(self):
         self.setup_commands()
@@ -34,39 +45,16 @@ class CLI:
 
         if args.command == "acc":
             if args.acc_action == "list":
-                self.list_accounts(args)
+                list_accounts(args, self.controller.get_accounts())
             elif args.acc_action == "add":
-                self.controller.create_account(args.name, args.type, args.special)
+                create_account(self.controller.create_account(args.name, args.type, args.special))
             elif args.acc_action == "rm":
-                self.controller.delete_account(args.name)
+                self.controller.delete_account(args)
+        elif args.command == "ejer":
+            if args.proj_action == "create":
+                view_create_project(self.controller.create_project(args))
         else:
             self.parser.print_help()
-
-    def list_accounts(self, args):
-        w_name = 30 
-        w_type = w_special = 10
-        w_id = 64
-
-        header = f"{'NOMBRE':<{w_name}} {'TIPO':<{w_type}} {'ESPECIAL':<{w_special}}"
-        if args.verbose:
-            header += f" {'ID':<{w_id}}"
-        
-        print(header)
-        print("=" * len(header))
-
-        accounts = self.controller.get_accounts()
-        for account in accounts:
-            if account.get_special():
-                special = "No"
-            else:
-                special = "Sí"
-            line = f"{account.name:<{w_name}} {account.type.capitalize():<{w_type}} {special:<{w_special}}"
-            if args.verbose:
-                line += f" {account.id:<{w_id}}"
-            print(line)
-
-        print("\n")
-        print("[Total de cuentas: ", str(len(accounts)) + "]")
 
 def main(args=None):
     app = CLI()
