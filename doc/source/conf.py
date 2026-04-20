@@ -27,6 +27,7 @@ language = 'es'
 html_theme = 'furo'
 html_static_path = ['_static']
 html_title = "FlowTracker beta1.0"
+html_logo = 'static/FlowTracker.svg'
 
 extensions = [
     'myst_parser'
